@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head> 
+ </head>
+ <body>
+  <h1>console.log()</h1> 
+  <h1>console.error()</h2> 
+  <h1>console.warn()</h3> 
+  <h1>console.time()and console.timetaken()</h4> 
+  <h1>console.table()</h5> 
+  <h1>console.group and groupend</h6>
+  <script>
+        console.time('sample');
+        console.group('simple');
+      console.log('abc');
+      console.error('this is simple error');
+       console.warn('this is warning message');
+       console.groupEnd('simple');
+        console.timeEnd('sample');
+        console.table({'a':1,  'b':2});
+      </script> 
+ </body>
+</html>
