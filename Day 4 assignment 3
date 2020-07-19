@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+ <head> 
+  <title>day 4 assignment 3</title> 
+ </head> 
+ <body> 
+  <script>
+    let shoppinglist= ['vegetables','snacks','bodycreams'];
+    console.log(shoppinglist);
+    let shoppingbasket= [shoppinglist= ['vegetables','snacks','bodycreams'],'chocolates','soaps','juices'];
+    console.log(shoppingbasket);
+  </script> 
+ </body>
+</html>
