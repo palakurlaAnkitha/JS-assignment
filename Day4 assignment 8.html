@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+ <head> 
+  <title>day 4 assignment 8</title> 
+ </head> 
+ <body> 
+  <script>
+    let ask=(question,yes,no)=>{
+      if(confirm(question)) yes();
+      else no();
+    }
+    
+      ask("do you agree",()=>alert("you agreed"),alert("you cancelled the execution"));
+  </script> 
+ </body>
+</html>
