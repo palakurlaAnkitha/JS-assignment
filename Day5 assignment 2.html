@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html>
+ <head></head> 
+ <body> 
+  <script>
+    class User{
+      constructor(name,age,email){
+        this.name=name;
+        this.age=age;
+        this.email=email;
+        this.coins=0;
+        this.courses=[];
+        
+      }
+      login(){
+        console.log(`${this.name} has logged in`);
+        return this;
+      }
+      logout(){
+        console.log(`${this.name} has logged out`);
+        return this;
+      }
+      addCoins(){
+        this.luCoins++;
+        console.log(`${this.name} has ${this.luCoins} coins`);
+        return this;
+    }
+    class Moderator extends User{
+      constructor(name,age,email){
+        super(name,age,email);
+    }
+      addCoins(coins){
+        console.log(`${this.name} has received ${this.coins} coins`);
+      }
+      removeCoins(coins){
+        console.log(`${this.name} has lost ${this.coins} coins`);
+      }
+    }
+    class Admin extends Moderator{
+      constructor(name,age,email){
+        super(name,age,email);
+      }
+      addCourse(user,course){
+        user.courses.push(course);
+        console.log(user);
+      }
+      deleteCourse(user,course){
+        user.courses.pop(course);
+        console.log(`${this.user} has been removed from ${this.course} course`);
+      }
+    }
+    
+    let user1=new User("ankitha",20,'ankitha@gmail.com');
+    let user2=new User("Teju",20,'Teju@gmail.com');
+    let myadmin=new Admin("xxx",35,"xxx@gmail.com");
+    let modtr=new Moderator("yyy",33,"yyy@gmail.com");
+    admin.addCourse(user1,"javascript");
+    user1.addCoins(10);
+    
+  </script> 
+ </body>
+</html>
