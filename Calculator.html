@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head></head> 
+ <body> 
+  <center> 
+   <form name="myForm" action="#"> 
+    <h1>simple calculator</h1> enter 1st number : 
+    <input type="text" name="you">
+    <br> enter 2nd number : 
+    <input type="text" name="you1">
+    <br> result : 
+    <input type="text" name="res">
+    <br> 
+  <input type="button" onclick="myadd()" value="+"></input>
+  <input type="button" onclick="mysub()" value="-"></input>
+  <input type="button" onclick="mymul()" value="*"></input>
+  <input type="button" onclick="mydiv()" value="/"></input>
+   </form> 
+   <script>
+     function myadd(){
+      let num1=parseInt(document.myForm.you.value);
+      let num2=parseInt(document.myForm.you1.value);
+      let num3=num1+num2;
+      document.myForm.res.value=num3;
+      }
+      function mysub(){
+      let num1=parseInt(document.myForm.you.value);
+      let num2=parseInt(document.myForm.you1.value);
+      let num3=num1-num2;
+      document.myForm.res.value=num3;
+      }
+      function mymul(){
+      let num1=parseInt(document.myForm.you.value);
+      let num2=parseInt(document.myForm.you1.value);
+      let num3=num1*num2;
+      document.myForm.res.value=num3;
+      }
+      function mydiv(){
+      let num1=parseInt(document.myForm.you.value);
+      let num2=parseInt(document.myForm.you1.value);
+      let num3=num1/num2;
+      document.myForm.res.value=num3;
+      }
+</script> 
+  </center> 
+ </body>
+</html>
