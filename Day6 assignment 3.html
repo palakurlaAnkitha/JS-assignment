@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+ <head> 
+  <title>day 6 assignment3</title> 
+  <style>
+        body{
+            backgroumd-color:white;
+        }
+        .dark-mode{
+            background-color:grey;
+            color:white
+        }
+    </style> 
+ </head> 
+ <body> 
+  <h1 id="title">hello welcome</h1> 
+  <h4 id="time"></h4> 
+  <script>
+            let name = prompt("enter ur name","anonymous");
+            let title=document.getElementById("title");
+           
+            title.innerText +=` ${name}`; 
+            let ctime=document.getElementById("time");
+            function clock(){
+                let date = new Date();
+                let time = date.toLocaleTimeString();
+                ctime.innerText = time;
+            }
+           
+
+            //clock();
+            setInterval(clock,1000);
+            let ele=document.body;
+            
+            ele.classList.toggle("dark-mode");
+        </script> 
+ </body>
+</html>
