@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+ <head> 
+  <title>day6 assignment 1</title> 
+ </head> 
+ <body> 
+  <script>
+    let i=0;
+    let arr=["purple","green","red","blue","skyblue"];
+    function myFunction(){
+      document.body.style.backgroundColor=arr[i];
+      i=(i+1)%(arr.length);
+     }
+    setInterval(myFunction,5000);
+     
+  </script> 
+ </body>
+</html>
